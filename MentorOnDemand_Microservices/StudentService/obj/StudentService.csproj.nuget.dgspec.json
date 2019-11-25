@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\StudentService\\StudentService.csproj": {}
+    "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\StudentService\\StudentService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\AuthLibrary\\AuthLibrary.csproj": {
+    "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\AuthLibrary\\AuthLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\AuthLibrary\\AuthLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\AuthLibrary\\AuthLibrary.csproj",
         "projectName": "AuthLibrary",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\AuthLibrary\\AuthLibrary.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\AuthLibrary\\AuthLibrary.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\AuthLibrary\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\AuthLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj": {
-                "projectPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj"
+              "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj": {
+                "projectPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj"
               }
             }
           }
@@ -94,14 +94,14 @@
         }
       }
     },
-    "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj": {
+    "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj",
         "projectName": "SharedLibrary",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\SharedLibrary\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\SharedLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -180,14 +180,14 @@
         }
       }
     },
-    "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\StudentLibrary\\StudentLibrary.csproj": {
+    "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\StudentLibrary\\StudentLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\StudentLibrary\\StudentLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\StudentLibrary\\StudentLibrary.csproj",
         "projectName": "StudentLibrary",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\StudentLibrary\\StudentLibrary.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\StudentLibrary\\StudentLibrary.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\StudentLibrary\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\StudentLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -203,8 +203,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj": {
-                "projectPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj"
+              "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj": {
+                "projectPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj"
               }
             }
           }
@@ -270,14 +270,14 @@
         }
       }
     },
-    "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\StudentService\\StudentService.csproj": {
+    "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\StudentService\\StudentService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\StudentService\\StudentService.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\StudentService\\StudentService.csproj",
         "projectName": "StudentService",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\StudentService\\StudentService.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\StudentService\\StudentService.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\StudentService\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\StudentService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -293,11 +293,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\AuthLibrary\\AuthLibrary.csproj": {
-                "projectPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\AuthLibrary\\AuthLibrary.csproj"
+              "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\AuthLibrary\\AuthLibrary.csproj": {
+                "projectPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\AuthLibrary\\AuthLibrary.csproj"
               },
-              "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\StudentLibrary\\StudentLibrary.csproj": {
-                "projectPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\StudentLibrary\\StudentLibrary.csproj"
+              "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\StudentLibrary\\StudentLibrary.csproj": {
+                "projectPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\StudentLibrary\\StudentLibrary.csproj"
               }
             }
           }

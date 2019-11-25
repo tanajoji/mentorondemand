@@ -8292,11 +8292,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj",
       "projectName": "SharedLibrary",
-      "projectPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj",
+      "projectPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\SharedLibrary\\SharedLibrary.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\SharedLibrary\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\SharedLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

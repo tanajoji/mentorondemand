@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\Api.Gateway\\Api.Gateway.csproj": {}
+    "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\Api.Gateway\\Api.Gateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\Api.Gateway\\Api.Gateway.csproj": {
+    "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\Api.Gateway\\Api.Gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\Api.Gateway\\Api.Gateway.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\Api.Gateway\\Api.Gateway.csproj",
         "projectName": "Api.Gateway",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\Api.Gateway\\Api.Gateway.csproj",
+        "projectPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\Api.Gateway\\Api.Gateway.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\MentorOnDemand_Microservices\\Api.Gateway\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Desktop\\mentorondemand\\MentorOnDemand_Microservices\\Api.Gateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
