@@ -21,8 +21,8 @@
           "Port": 9090 //port of adminservice
         }
       ],
-      "UpstreamPathTemplate": "/adminservice/{catchAll}"
-      //"UpstreamHttpMethod": [ "Put", "Delete" ]  (removed)
+      "UpstreamPathTemplate": "/adminservice/{catchAll}",
+      "UpstreamHttpMethod": [ "Put", "Delete", "Get", "Post" ]
     },
     {
       "DownstreamPathTemplate": "/api/mentor/{catchAll}",
