@@ -1,0 +1,290 @@
+<div>
+  <div class="sidebar">
+    <h3 style="color: white">LEARNER</h3><br><br>
+    <a (click)="usrFunction()" style="cursor: pointer;height: 40px;"><i class="fas fa-user-graduate"></i> Users</a>
+    <a (click)="mntrFunction()" style="cursor: pointer;height: 40px;"><i class="fas fa-chalkboard-teacher"></i> Mentors</a>
+    <a (click)="techFunction()" style="cursor: pointer;height: 40px;"><i class="fas fa-laptop-code"></i> Technologies</a>
+    <!-- <a (click)="crsFunction()" style="cursor: pointer;height: 40px;"><i class="fa fa-list-alt"></i> Courses</a>
+    <a (click)="msgFunction()" style="cursor: pointer;height: 40px;"><i class="fa fa-fw fa-envelope"></i> Messages</a>
+    <a (click)="msgFunction()" style="cursor: pointer;height: 40px;"><i class="fas fa-money-bill-alt"></i> Payments List</a> -->
+
+  </div>
+</div>
+
+
+<div class="offset">
+
+
+  <div id="usr">
+    <h1>User List</h1>
+    <div class="card1 tablepadding">
+      <table class="table table-striped table-bordered table-hover">
+        <tr class="text">
+          <!-- <th>ID</th> -->
+          <th>User Name</th>
+          <th>Email Id</th>
+          <!-- <th>Password</th> -->
+          <th>Delete</th>
+          <th>Block Users</th>
+          <th>Unblock Users</th>
+          <th>Status</th>
+        </tr>
+        <tr *ngFor="let user of users" class="text">
+          <!-- *ngIf="user.status=='active'"         FILTERING-->
+          <!-- <td>{{user._id}}</td> -->
+          <td>{{user.name}}</td>
+          <td>{{user.email}}</td>
+          <!-- <td>{{user.course_logo}}</td> -->
+          <td>
+            <button type="button" (click)="delete_user(user.id)" class="btn btn-dark button1">
+              <i class="fa fa-remove" style="color:red"></i> Delete
+            </button>
+          </td>
+          <td>
+            <button type="button" (click)="block_user(user.id)" class="btn btn-dark button1">
+              <i class="fa fa-ban" style="color:red"></i> Block
+            </button>
+          </td>
+          <td>
+            <button type="button" (click)="unblock_user(user.id)" class="btn btn-dark button1">
+              <i class="fa fa-ban" style="color:white"></i> Unblock
+            </button>
+          </td>
+          <td>{{user.status}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+
+  
+
+
+
+  <div id="mntr">
+    <h1>Mentor List</h1>
+    <div class="card1 tablepadding">
+      <table class="table table-striped table-bordered table-hover">
+        <tr class="text">
+          <!-- <th>ID</th> -->
+          <th>User Name</th>
+          <th>Email Id</th>
+          <!-- <th>Password</th> -->
+          <th>Delete</th>
+          <th>Block Mentors</th>
+          <th>Unblock Mentors</th>
+          <th>Status</th>
+        </tr>
+        <tr *ngFor="let mentor of mentors" class="text">
+          <!-- <td>{{mentor._id}}</td> -->
+          <td>{{mentor.name}}</td>
+          <td>{{mentor.email}}</td>
+          <!-- <td>{{mentor.course_logo}}</td> -->
+          <td>
+            <button type="button" (click)="delete_mentor(mentor.id)" class="btn btn-dark button1">
+              <i class="fa fa-remove" style="color:red"></i> Delete
+            </button>
+          </td>
+          <td>
+            <button type="button" (click)="block_mentor(mentor.id)" class="btn btn-dark button1">
+              <i class="fa fa-ban" style="color:red"></i> Block
+            </button>
+          </td>
+          <td>
+            <button type="button" (click)="unblock_mentor(mentor.id)" class="btn btn-dark button1">
+              <i class="fa fa-ban" style="color:white"></i> Unblock
+            </button>
+          </td>
+          <td>{{mentor.status}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div id="tech">
+    <h1>Technology List</h1>
+
+    <br>
+    <button class="btn btn-dark button1" routerLink="../addtechnology">Add Technology</button>
+    <br><br>
+
+    <div class="card1 tablepadding">
+      <table class="table table-striped table-bordered table-hover">
+        <tr class="text">
+          <th>ID</th>
+          <th>Technology Name</th>
+          <th>Commission</th>
+          <th>Delete</th>
+          <th>Update</th>
+        </tr>
+        <tr *ngFor="let tech of techs" class="text">
+          <td>{{tech.id}}</td>
+          <td>{{tech.technologyName}}</td>
+          <td>{{tech.commission}}</td>
+          <!-- <td>{{mentor.course_logo}}</td> -->
+          <td>
+            <button type="button" (click)="delete_technology(tech.id)" class="btn btn-dark button1">
+              <i class="fa fa-remove" style="color:red"></i> Delete
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-dark button1" [routerLink]="['../edittechnology',tech.id]">Edit Technology</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div id="crs">
+    
+    <h1>Course List</h1>
+    
+  
+    <div class="card1 tablepadding">
+      <table class="table table-striped table-bordered table-hover">
+        <tr class="text">
+          <!-- <th>ID</th> -->
+          <th>Course Name</th>
+          <th>Trainer Name</th>
+          <th>Course LOgo</th>
+          <th>Course Description</th>
+          <th>Delete</th>
+          <th>Update</th>
+        </tr>
+        <tr *ngFor="let course of courses" class="text">
+          <!-- <td>{{course._id}}</td> -->
+          <td>{{course.course_name}}</td>
+          <td>{{course.trainer_name}}</td>
+          <td>{{course.course_logo}}</td>
+          <td>{{course.course_description}}</td>
+          <td>
+            <button type="button" (click)="delete_course(course._id)" class="btn btn-dark button1">
+              <i class="fa fa-remove" style="color:red"></i>
+            </button>
+          </td>
+          <td>
+            <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-dark button1">
+              <i class="fa fa-pencil" style="color:red"></i>
+            </button>
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title" style="color: black">{{this.course._id}}</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6" style="color: black">
+                      <h1 style="text-align:center; color: black">Edit Course</h1>
+                      <form (ngSubmit)="submit_form_data()" #form1="ngForm">
+                        <label>Course Name</label><br>
+                        <input type="text" [(ngModel)]=course.course_name name="course_name" #course_name2="ngModel"
+                          minlength="3" required placeholder="Enter Course Name">
+                        <span *ngIf="course_name2.invalid && (course_name2.dirty || course_name2.touched)"
+                          class="red-text">
+                          <span *ngIf="course_name2.errors.required"> Course Name should not be empty.</span>
+                          <span *ngIf="course_name2.errors.minlength"> Course Name must be at least 3 characters
+                            long.</span>
+                        </span><br><br>
+
+                        <label>Trainer Name</label><br>
+                        <input type="text" [(ngModel)]=course.trainer_name name="trainer_name" #trainer_name2="ngModel"
+                          minlength="3" required placeholder="Enter Trainer Name">
+                        <span *ngIf="trainer_name2.invalid && (trainer_name2.dirty || trainer_name2.touched)"
+                          class="red-text">
+                          <span *ngIf="trainer_name2.errors.required"> Trainer Name should not be empty.</span>
+                          <span *ngIf="trainer_name2.errors.minlength"> Trainer Name must be at least 3 characters
+                            long.</span>
+                        </span><br><br>
+
+                        <label>Course Logo URL</label><br>
+                        <input type="text" [(ngModel)]=course.course_logo name="course_logo" #course_logo2="ngModel"
+                          required placeholder="Enter Course 
+                              logo URL">
+
+                        <label>course_description</label><br>
+                        <input type="text" [(ngModel)]=course.course_description name="course_description"
+                          #course_description2="ngModel" required placeholder="Enter Description">
+
+
+                        <button [disabled]="!form1.form.valid" class="btn btn-success">Update</button>
+                      </form>
+                      <div>
+                        <br>
+                        <p class="red-text">{{message}}</p>
+                      </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <div id="msg">
+    <h1>Messages</h1>
+    <div class="card1 tablepadding">
+      <table class="table table-striped table-bordered table-hover">
+        <tr class="text">
+          <!-- <th>ID</th> -->
+          <th>E-Mail ID</th>
+          <th>Message</th>
+          <th>Delete</th>
+        </tr>
+        <tr *ngFor="let message of messages" class="text">
+          <!-- <td>{{message._id}}</td> -->
+          <td>{{message.email_id}}</td>
+          <td>{{message.user_message}}</td>
+          <td>
+            <button type="button" (click)="delete_message(message._id)" class="btn btn-dark button1">
+              <i class="fa fa-remove" style="color:red"></i>
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+
+
+</div>

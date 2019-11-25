@@ -1,0 +1,43 @@
+<div class="d-flex justify-content-center" style="padding-top: 40px">
+    <h4>Learner Profile</h4>
+</div>
+
+<div class="container" style="padding-top: 150px">
+
+    <div class="card-deck" style="padding-top: 3px">
+
+        <div class="card " style="width:800px; height:300px; border-radius: 2rem; color: white;">
+            <span style="padding: 15px; color: white" class="fa fa-clock-o fa-5x"></span>
+            <div class="card-body">
+                <h4 class="card-title">Trainings Ongoing</h4>
+                <p class="card-text">See ongoing Trainings</p>
+                <button class="btn btn-dark button1" [routerLink]="['../usercurrent']">View</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-deck" style="padding-top: 3px">
+
+        <div class="card" style="width:800px; height:300px; border-radius: 2rem; color: white;">
+            <span style="padding: 15px; color: white" class="fa fa-thumbs-o-up fa-5x"></span>
+            <div class="card-body">
+                <h4 class="card-title">Trainings Completed</h4>
+                <p class="card-text">See completed courses</p>
+                <button class="btn btn-dark button1" [routerLink]="['../usercompleted']">View</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-deck" style="padding-top: 3px">
+
+        <div class="card" style="width:800px; height:300px; border-radius: 2rem; color: white;">
+            <span style="padding: 15px; color: white" class="fa fa-search fa-5x"></span>
+            <div class="card-body">
+                <h4 class="card-title">Search For Trainings </h4>
+                <p class="card-text">Search trainer to start new courses</p>
+                <button class="btn btn-dark button1" [routerLink]="['../courselist']">Search</button>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>

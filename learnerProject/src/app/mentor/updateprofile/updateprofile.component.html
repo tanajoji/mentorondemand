@@ -1,0 +1,64 @@
+
+<div class="head d-flex justify-content-center">
+    <h2>Add Profile Details</h2>
+  </div>
+  
+  <div class="head d-flex justify-content-center" style="padding-bottom: 10px">
+    <div class="cardreg">
+      <div class="head d-flex justify-content-center">
+        <form (ngSubmit)="submit_form_data(form1.value)" #form1="ngForm">
+  
+          <div class="container">
+  
+
+
+            <!-- <label style="color: white"><b>Mentor ID</b></label> -->
+            <input type="text" readonly hidden [(ngModel)]="MentorId" name="MentorId" #mentorId2="ngModel" minlength="3" required>
+
+
+            <label style="color: white"><b>Name</b></label>
+            <input type="text" readonly [(ngModel)]="Name" name="Name" #Name2="ngModel" minlength="3" required>
+            
+  
+  
+            <label style="color: white"><b>Experience</b></label>
+            <input type="text" placeholder="Enter years of Experience" [(ngModel)]="Experience" name="Experience" #experience2="ngModel" required>
+            
+          
+            
+            <label style="color: white"><b>LinkedIn ID</b></label>
+            <input type="text" placeholder="Enter LinkedIn ID" [(ngModel)]="LinkedinId" name="LinkedinId" #linkedinId2="ngModel" required>
+  
+            <label style="color: white"><b>Time Slot</b></label>
+            <!-- <input type="text" placeholder="Enter Time Slot" [(ngModel)]="timeSlot" name="timeSlot" #timeSlot2="ngModel"> -->
+
+            <select id="timeSlot"   [(ngModel)]="TimeSlot" name="TimeSlot" #timeSlot2="ngModel" placeholder="Time Slot">
+                 
+                    <option selected>7am-9am</option>
+                    <option>4pm-6pm</option>
+                    <option>6pm-8pm</option>
+                  </select>
+            
+  
+            
+            
+  
+           
+  
+  
+  
+  
+            <div class="d-flex justify-content-center">
+              
+              <button [disabled]="!form1.form.valid" class="btn btn-dark button1">Save</button>
+            </div>
+          </div>
+  
+          
+          <div><p class="red-text d-flex justify-content-center">{{message}}</p></div>
+        </form>
+        
+      </div>
+      
+    </div>
+  </div>

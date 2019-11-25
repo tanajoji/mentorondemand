@@ -1,0 +1,27 @@
+<br><br>
+
+<h1>Technology List</h1>
+
+    <br>
+    <br><br>
+
+    <div class="card1 tablepadding">
+      <table class="table table-striped table-bordered table-hover">
+        <tr class="text">
+          
+          <th>Technology Name</th>
+          <th>Commission</th>
+          <th>Add Course</th>
+        </tr>
+        <tr *ngFor="let tech of techs" class="text">
+          
+          <td>{{tech.technologyName}}</td>
+          <td>{{tech.commission}}</td>
+          
+          
+          <td>
+            <button class="btn btn-dark button1" [routerLink]="['../maddcourse',tech.id]">Add New Course</button>
+          </td>
+        </tr>
+      </table>
+    </div>

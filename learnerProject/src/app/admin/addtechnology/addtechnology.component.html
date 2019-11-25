@@ -1,0 +1,49 @@
+<div class="head d-flex justify-content-center">
+    <h2>Add A New Technology To Learner !</h2>
+  </div>
+  
+  <div class="head d-flex justify-content-center" style="padding-bottom: 10px">
+    <div class="cardreg">
+      <div class="head d-flex justify-content-center">
+        <form (ngSubmit)="submit_form_data(form1.value)" #form1="ngForm">
+  
+          <div class="container">
+  
+            
+            <label style="color: white"><b>Technology Name</b></label>
+            <input type="text" placeholder="Enter Technology Name" [(ngModel)]="technology_name" name="TechnologyName" #technology_name2="ngModel" minlength="3" required>
+            
+  
+  
+            <label style="color: white"><b>Commission</b></label>
+            <input type="text" placeholder="Enter Commission" [(ngModel)]="commission" name="Commission" #commission5="ngModel" minlength="1" required>
+            
+   
+            <span *ngIf="technology_name2.invalid && (technology_name2.dirty || technology_name2.touched)" class="red-text">
+              <span *ngIf="technology_name2.errors.required"> Technology Name should not be empty.</span>
+              <span *ngIf="technology_name2.errors.minlength"> Technology Name must be at least 3 characters long.</span>
+            </span><br>
+  
+            <span *ngIf="commission5.invalid && (commission5.dirty || commission5.touched)" class="red-text">
+              <span *ngIf="commission5.errors.required"> Commission should not be empty.</span>
+            </span><br>
+  
+            
+  
+  
+  
+  
+            <div class="d-flex justify-content-center">
+              
+              <button [disabled]="!form1.form.valid" class="btn btn-dark button1">Add Technology</button>
+            </div>
+          </div>
+  
+          
+          <div><p class="red-text d-flex justify-content-center">{{message}}</p></div>
+        </form>
+        
+      </div>
+      
+    </div>
+  </div>

@@ -1,0 +1,182 @@
+<!-- <div class="d-flex justify-content-center" style="padding-bottom:10%">
+
+  <div class="card-body" style="padding-top: 50px">
+
+    <div class="d-flex justify-content-center">
+      <input style=height:50% class="form-control mr-sm-3 " type="textbox" placeholder="    Technology"  [(ngModel)]="course_name" >
+    </div>
+    <div class="d-flex justify-content-center" style="padding-top: 20px">
+      <input type="button" class="btn btn-sm btn-dark button1" value="Search Trainer" (click)="get_searched_course(this.course_name)">
+    </div>
+  </div>
+ 
+</div>
+
+
+
+
+
+
+
+
+<section id="services" class="section section-light">
+  <div class="container">
+    <div id="search_heading">
+    <header class="section-header" style="padding-bottom: 20px">
+      <h3>Search Results</h3>
+
+    </header>
+    </div>
+    <div class="row">
+
+      <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" *ngFor="let ccourse of ccourses">
+        <div class="box">
+          
+          <div>
+            <img src="{{ccourse.course_logo}}" class="img">
+          </div>
+
+          <h4 class="title" style="padding-top: 10px"><p>{{ccourse.course_name}}</p></h4>
+          <p class="description" style="height: 180px">{{ccourse.course_description}}</p>
+          <h4>Trainer</h4>
+          <p>{{ccourse.trainer_name}}</p>
+        </div>
+      </div>
+      
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+  
+
+
+
+<section id="services" class="section section-light">
+  <div class="container">
+
+    <header class="section-header" style="padding-bottom: 20px">
+      <h3>Courses Available</h3>
+
+    </header>
+
+    <div class="row">
+
+      <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s" *ngFor="let course of courses">
+        <div class="box">
+          
+          <div>
+            <img src="{{course.course_logo}}" class="img">
+          </div>
+
+          <h4 class="title" style="padding-top: 10px"><p>{{course.course_name}}</p></h4>
+          <p class="description" style="height: 180px">{{course.course_description}}</p>
+          <h4>Trainer</h4>
+          <p>{{course.trainer_name}}</p>
+        </div>
+      </div>
+      
+
+    </div>
+
+  </div>
+</section>
+
+
+<div>
+  <p class="red-text">{{error_message}}</p>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+
+<h1>Courses Available</h1>
+
+    <br>
+    <br><br>
+
+    <div class="card1 tablepadding">
+      <table class="table table-striped table-bordered table-hover">
+        <tr class="text">
+          
+          <th>Course Name</th>
+          
+          <th>Commision</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Course Fee</th>
+          <th>Trainer Details</th>
+          
+        </tr>
+        <tr *ngFor="let course of courses" class="text">
+          
+          <td>{{course.technologyName}}</td>
+          
+          <td>{{course.commission}}</td>
+          <td>{{course.startDate | date: 'yyyy-MM-dd'}}</td>
+          <td>{{course.endDate | date: 'yyyy-MM-dd'}}</td>
+          <td>{{course.courseFee}}</td>
+          <td>          <input type="button" class="btn btn-dark button1"
+            onclick="document.getElementById('logInPopup').style.display='block'" (click)="getmentorprofile(course.mentorId)" value="View Trainer">
+</td>
+
+          
+        </tr>
+      </table>
+    </div>
+
+
+
+
+
+    <div id="logInPopup" class="modal">
+      <form class="modal-content animate" style="width:30%">
+        <div class="card">
+          <div class="card-header">
+            
+              <span onclick="document.getElementById('logInPopup').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+              <h3 style="color: white; text-align: center; padding-top: 10px">Trainer Details</h3>
+           
+          </div>
+          <div class="card-body">
+            <div class="container">
+              <form>
+  <label style="color: white;">Trainer Name: <b style="color: white;">{{mentor.name}}</b></label><br>
+  <label style="color: white;">LinkedIn ID:  <b style="color: white;">{{mentor.linkedinId}}</b></label><br>
+  <label style="color: white;">Experience: <b style="color: white;">{{mentor.experience}} years.</b></label><br>
+  <label style="color: white;">Timeslot: <b style="color: white;">{{mentor.timeSlot}}</b></label>
+  </form>
+             
+            </div>
+          </div>
+          <div class="card-footer" style="text-align: center;">
+            <div class="form-group">
+              <input type="button" class="btn btn-success" value="Okay"
+              onclick="document.getElementById('logInPopup').style.display='none'">
+              
+            </div>
+          </div>
+       
+        </div>
+      </form>
+    </div>
+      
+

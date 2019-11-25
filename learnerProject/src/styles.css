@@ -1,0 +1,90 @@
+body{
+    /* background-image: url("https://img.freepik.com/free-vector/dark-wall-background_1390-191.jpg"); */
+    /* background-image: url("https://images.unsplash.com/photo-1524337676612-18e579b62f4a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"); */
+    /* background-image: url("https://i.ibb.co/gZmvLRz/b.jpg"); */
+    /* background-image: url("https://images.unsplash.com/photo-1520531158340-44015069e78e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1438&q=80"); */
+    /* background-image: url("https://images.unsplash.com/photo-1499088513455-78ed88b7a5b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1571&q=80"); */
+    /* background-image: url("https://images.unsplash.com/photo-1472803828399-39d4ac53c6e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1421&q=80"); */
+    /* background-image: url("http://shoppopgallery.com/wp-content/uploads/2019/06/high-definition-wallpapers-2560-x-1440-83-images-newest-incredible-11.jpg"); */
+    /* background-image: url("https://wallpapercave.com/wp/wp3516259.jpg"); */
+    /* background-image: url("https://wallpapercave.com/wp/wp2308551.jpg"); */
+    /* background-image: url("https://wallpapercave.com/wp/wp3508609.jpg"); */
+    background-image: url("assets\images\bbq.jpg");
+    background-attachment: fixed;
+    
+        }
+
+.move{
+    padding-left: 35px;
+}
+.head{
+    color: black;
+    padding-top: 50px;
+}
+.moveform{
+    padding-left: 520px;
+    padding-top: 150px;
+}
+.movebutton{
+    padding-left: 120px;
+}
+
+.search{
+    padding-left: 600px;
+}
+
+.tbpad{
+    padding-left: 20px;
+}
+
+.sbpad{
+    padding-left: 40px;
+}
+
+.navcol{
+    background-color:transparent;
+}
+
+.card{
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.6) !important;
+    }
+
+
+
+select[id="timeSlot"],input[type=text], input[type=password], input[type=email],input[type=date], input[type=number]{
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+      }
+
+
+
+.button1 {
+  box-shadow: 0 4px 8px 0 rgba(247, 244, 244, 0.7), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.cardreg{
+   
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.6) !important;
+    }
+.padded{
+    padding-left: 42px;
+}
+
+.btnmove{
+    flex-direction: row;
+}
+
+.logoutright{
+padding-left: 900px;
+}

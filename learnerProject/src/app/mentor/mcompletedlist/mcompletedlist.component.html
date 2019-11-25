@@ -1,0 +1,28 @@
+<br><br>
+
+<h1>Completed Trainings</h1>
+
+    <br>
+    <br><br>
+
+    <div class="card1 tablepadding">
+      <table class="table table-striped table-bordered table-hover">
+        <tr class="text">
+          
+          <th>Course Name</th>
+          <th>Commision</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Course Fee</th>
+        </tr>
+        <tr *ngFor="let course of courses" class="text">
+          
+          <td>{{course.technologyName}}</td>
+          <td>{{course.commission}}</td>
+          <td>{{course.startDate | date: 'yyyy-MM-dd'}}</td>
+          <td>{{course.endDate | date: 'yyyy-MM-dd'}}</td>
+          <td>{{course.courseFee}}</td>
+          
+        </tr>
+      </table>
+    </div>

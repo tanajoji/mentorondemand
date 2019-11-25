@@ -1,0 +1,13 @@
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\AuthLibrary\bin\Debug\netcoreapp3.0\SharedLibrary.dll
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\AuthLibrary\obj\Debug\netcoreapp3.0\AuthLibrary.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\AuthLibrary\obj\Debug\netcoreapp3.0\AuthLibrary.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\AuthLibrary\obj\Debug\netcoreapp3.0\AuthLibrary.AssemblyInfo.cs
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\AuthLibrary\bin\Debug\netcoreapp3.0\AuthLibrary.deps.json
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\AuthLibrary\bin\Debug\netcoreapp3.0\AuthLibrary.runtimeconfig.json
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\AuthLibrary\bin\Debug\netcoreapp3.0\AuthLibrary.runtimeconfig.dev.json
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\AuthLibrary\bin\Debug\netcoreapp3.0\AuthLibrary.dll
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\AuthLibrary\bin\Debug\netcoreapp3.0\AuthLibrary.pdb
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\AuthLibrary\bin\Debug\netcoreapp3.0\SharedLibrary.pdb
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\AuthLibrary\obj\Debug\netcoreapp3.0\AuthLibrary.csproj.CopyComplete
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\AuthLibrary\obj\Debug\netcoreapp3.0\AuthLibrary.dll
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\AuthLibrary\obj\Debug\netcoreapp3.0\AuthLibrary.pdb

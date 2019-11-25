@@ -1,0 +1,197 @@
+.pimg1, .pimg2, .pimg3{
+    position:relative;
+    opacity: 0.9;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    
+
+
+    /*
+        fixed = parallax
+        scroll = normal
+    */
+    background-attachment:fixed;
+    }
+    
+    .pimg1{
+    background-image:url('/Users/tanajoji/Documents/GitHub/angular-project-CTS/learnerProject/src/assets/images/bbq.jpg');
+    min-height:200px;
+    }
+    
+    .pimg2{
+    background-image:url('/Users/tanajoji/Documents/GitHub/angular-project-CTS/learnerProject/src/assets/images/bbq.jpg');
+    min-height:700px;
+    }
+    
+    .pimg3{
+    background-image:url('/Users/tanajoji/Documents/GitHub/angular-project-CTS/learnerProject/src/assets/images/bbq.jpg');
+    min-height:400px;
+    }
+    
+    .section{
+    text-align:center;
+    padding:10px 0px 2px 0px;
+    }
+
+    .sectionsignup{
+      text-align:center;
+      padding:100px 0px 100px 0px;
+      background-color:rgba(29, 28, 28, 0.699);
+      color:white;
+      }
+  
+    
+    .section-light{
+    background-color:rgba(29, 28, 28, 0.699);
+    color:white;
+    }
+    
+    .section-dark{
+    background-color:black;
+    color:white;
+    }
+    
+    .ptext{
+    position:absolute;
+    top:40%;
+    width:100%;
+    text-align:center;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+    }
+
+    .ptext1{
+      position:absolute;
+      top:10%;
+      width:100%;
+      text-align:center;
+      font-size:27px;
+      letter-spacing:8px;
+      text-transform:uppercase;
+      }
+    
+    .ptext .border{
+    color:rgb(0, 0, 0);
+    padding:20px;
+    }
+
+    .ptext1 .border{
+      color:rgb(0, 0, 0);
+      padding:20px;
+      }
+    
+    .ptext .border.trans{
+    background-color:transparent;
+    }
+    
+    @media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment:scroll;
+    }
+    }
+   
+/* Services Section
+--------------------------------*/
+
+#services {
+    padding: 60px 0 40px 0;
+  }
+  
+  #services .box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    height: 400px;
+  }
+  
+  #services .box:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  #services .icon {
+    margin: 0 auto 15px auto;
+    padding-top: 12px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  
+  #services .icon i {
+    font-size: 36px;
+    line-height: 1;
+  }
+  
+  #services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  #services .title a {
+    color: #111;
+  }
+  
+  #services .box:hover .title a {
+    color: #1bb1dc;
+  }
+  
+  #services .description {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0;
+    text-align: left;
+    color: black;
+  }
+  
+  input[type="textbox"]::placeholder {  
+      text-align: center; 
+} 
+
+.cardlogin{
+  height: 370px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.664) !important;
+  }
+
+/* .logback{
+  background-image: url("");
+  background-attachment: fixed;
+} */
+
+.btntrans{
+  background: transparent;
+  border: 3px solid #070707;
+  border-radius: 0px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 14px 36px;
+  margin-top: 42px;
+  margin-right: 16px;
+}
+
+.card2{
+  height: auto;
+  margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.6) !important;
+
+}
+
+.red-text{
+  color: rgb(214, 209, 209);
+}

@@ -1,0 +1,56 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/account/{catchAll}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44378 //port of authservice 
+        }
+      ],
+      "UpstreamPathTemplate": "/authservice/{catchAll}"
+      //"UpstreamHttpMethod": [ "Put", "Delete" ]  (removed)
+    },
+    {
+      "DownstreamPathTemplate": "/api/admin/{catchAll}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44328 //port of adminservice
+        }
+      ],
+      "UpstreamPathTemplate": "/adminservice/{catchAll}"
+      //"UpstreamHttpMethod": [ "Put", "Delete" ]  (removed)
+    },
+    {
+      "DownstreamPathTemplate": "/api/mentor/{catchAll}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44307 //port of mentorservice 
+        }
+      ],
+      "UpstreamPathTemplate": "/mentorservice/{catchAll}"
+      //"UpstreamHttpMethod": [ "Put", "Delete" ]  (removed)
+    },
+    {
+      "DownstreamPathTemplate": "/api/student/{catchAll}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44387 //port of studentservice 
+        }
+      ],
+      "UpstreamPathTemplate": "/studentservice/{catchAll}"
+      //"UpstreamHttpMethod": [ "Put", "Delete" ]  (removed)
+    }
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44369"
+  }
+}

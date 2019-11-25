@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-sm  navbar-light navcol" style="height: 50px">
+  <div class="container-fluid">
+
+    <ul class="navbar-nav">
+      <a class="navbar-brand" *ngIf="!_authService.adminCheck()" routerLink=""><b>LEARNER</b></a>
+
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="!_authService.adminCheck()" routerLink="">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="!_authService.adminCheck()" href="#contactus">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="!_authService.adminCheck()" routerLink ="courses" routerLinkActive="active">Courses</a>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="!_authService.loggedIn()" href="#signin" routerLinkActive="active">Login</a>
+        <a class="nav-link" style="cursor:pointer" *ngIf="_authService.loggedIn()"
+          (click)="_authService.logoutUser()">Logout</a>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" *ngIf="!_authService.loggedIn()" href="#signup" routerLinkActive="active">Sign Up</a>
+      </li>
+    </ul>
+
+  </div>
+
+
+</nav>

@@ -1,0 +1,13 @@
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\MentorLibrary\bin\Debug\netcoreapp3.0\MentorLibrary.deps.json
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\MentorLibrary\bin\Debug\netcoreapp3.0\MentorLibrary.dll
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\MentorLibrary\obj\Debug\netcoreapp3.0\MentorLibrary.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\MentorLibrary\obj\Debug\netcoreapp3.0\MentorLibrary.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\MentorLibrary\obj\Debug\netcoreapp3.0\MentorLibrary.AssemblyInfo.cs
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\MentorLibrary\bin\Debug\netcoreapp3.0\MentorLibrary.runtimeconfig.json
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\MentorLibrary\bin\Debug\netcoreapp3.0\MentorLibrary.runtimeconfig.dev.json
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\MentorLibrary\bin\Debug\netcoreapp3.0\MentorLibrary.pdb
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\MentorLibrary\bin\Debug\netcoreapp3.0\SharedLibrary.dll
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\MentorLibrary\bin\Debug\netcoreapp3.0\SharedLibrary.pdb
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\MentorLibrary\obj\Debug\netcoreapp3.0\MentorLibrary.csproj.CopyComplete
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\MentorLibrary\obj\Debug\netcoreapp3.0\MentorLibrary.dll
+C:\Users\HP\source\repos\MentorOnDemand_Microservices\MentorLibrary\obj\Debug\netcoreapp3.0\MentorLibrary.pdb
