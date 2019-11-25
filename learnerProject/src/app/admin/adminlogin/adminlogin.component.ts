@@ -29,7 +29,7 @@ export class AdminloginComponent implements OnInit {
 	
 let headers = new HttpHeaders({'Content-Type': 'application/json'});
 
-this.http.post("https://localhost:44369/authservice/login", loginform, 
+this.http.post("http://localhost:9091/authservice/login", loginform, 
                   {headers: headers, responseType:'text'}).subscribe(
       (result) => {
         console.log(result)

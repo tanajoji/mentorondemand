@@ -18,7 +18,7 @@ export class MtechlistComponent implements OnInit {
   terror_message='';
   techs = [];
   get_technology_list = function() {
-    this.http.get("https://localhost:44369/adminservice/technologylist").subscribe(
+    this.http.get("http://localhost:9091/adminservice/technologylist").subscribe(
       (result : any[]) => {
         this.techs = result;
         console.log(result)

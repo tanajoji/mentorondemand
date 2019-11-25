@@ -33,7 +33,7 @@ export class MentorsignupComponent implements OnInit {
 	
     let headers = new HttpHeaders({'Content-Type': 'application/json'});
 
-    this.http.post("https://localhost:44369/authservice/register", signupform, 
+    this.http.post("http://localhost:9091/authservice/register", signupform, 
                   {headers: headers, responseType:'text'}).subscribe(
       (result) => {
         console.log(result)

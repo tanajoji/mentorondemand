@@ -31,7 +31,7 @@ LinkedinId;
 
 
 
-    this.http.get("https://localhost:44369/mentorservice/getmentor/"+localStorage.getItem('mentormail')).subscribe(
+    this.http.get("http://localhost:9091/mentorservice/getmentor/"+localStorage.getItem('mentormail')).subscribe(
       (result) => {
        
         console.log(result);
@@ -69,7 +69,7 @@ LinkedinId;
 
     
 
-    this.http.post("https://localhost:44369/mentorservice/profile", formdata, 
+    this.http.post("http://localhost:9091/mentorservice/profile", formdata, 
                   {headers: headers, responseType:'text'}).subscribe(
       (result) => {
         console.log(result)

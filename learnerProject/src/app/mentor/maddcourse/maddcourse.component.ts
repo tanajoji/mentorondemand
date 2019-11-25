@@ -29,7 +29,7 @@ export class MaddcourseComponent implements OnInit {
       console.log(localStorage.getItem('mentormail'));
     });
 
-    this.http.get("https://localhost:44369/adminservice/technology/"+this.technologyId).subscribe(
+    this.http.get("http://localhost:9091/adminservice/technology/"+this.technologyId).subscribe(
       (result) => {
        
         console.log(result);
@@ -45,7 +45,7 @@ export class MaddcourseComponent implements OnInit {
     )
 
 
-    this.http.get("https://localhost:44369/mentorservice/getmentor/"+localStorage.getItem('mentormail')).subscribe(
+    this.http.get("http://localhost:9091/mentorservice/getmentor/"+localStorage.getItem('mentormail')).subscribe(
       (result) => {
        
         console.log(result);
@@ -83,7 +83,7 @@ export class MaddcourseComponent implements OnInit {
     
     let headers = new HttpHeaders({'Content-Type': 'application/json'});
 
-    this.http.post("https://localhost:44369/mentorservice/addcourse", form, 
+    this.http.post("http://localhost:9091/mentorservice/addcourse", form, 
                   {headers: headers, responseType:'text'}).subscribe(
       (result) => {
         console.log(result)

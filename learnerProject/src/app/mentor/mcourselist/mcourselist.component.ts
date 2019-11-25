@@ -34,7 +34,7 @@ export class McourselistComponent implements OnInit {
 
 
 
-    this.http.get("https://localhost:44369/mentorservice/getmentor/"+localStorage.getItem('mentormail')).subscribe(
+    this.http.get("http://localhost:9091/mentorservice/getmentor/"+localStorage.getItem('mentormail')).subscribe(
       (result) => {
        
         console.log(result);
@@ -53,7 +53,7 @@ export class McourselistComponent implements OnInit {
   }
 
   get_list = function() {
-    this.http.get("https://localhost:44369/mentorservice/mcourselist/"+this.mentorId).subscribe(
+    this.http.get("http://localhost:9091/mentorservice/mcourselist/"+this.mentorId).subscribe(
       (result : any[]) => {
         this.courses = result;
         console.log(result)

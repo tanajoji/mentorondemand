@@ -101,7 +101,7 @@ TechnologyName: string;
 
 
 
-    this.http.get("https://localhost:44369/mentorservice/courselist").subscribe(
+    this.http.get("http://localhost:9091/mentorservice/courselist").subscribe(
       (result : any[]) => {
         this.courses = result;
         console.log(result)
@@ -123,7 +123,7 @@ TechnologyName: string;
   
 
   getmentorprofile= function(id: string) {
-    this.http.get("https://localhost:44369/studentservice/getmentorprofile/"+id).subscribe(
+    this.http.get("http://localhost:9091/studentservice/getmentorprofile/"+id).subscribe(
       (result) => {
         this.mentor = result;
         console.log(result)

@@ -43,7 +43,7 @@ export class CourselistComponent implements OnInit {
 
 
 
-    this.http.get("https://localhost:44369/mentorservice/courselist").subscribe(
+    this.http.get("http://localhost:9091/mentorservice/courselist").subscribe(
       (result : any[]) => {
         this.courses = result;
         console.log(result)
@@ -62,7 +62,7 @@ export class CourselistComponent implements OnInit {
 
   userpayment = function(id: Number, technologyName: string, courseFee: Number, startDate: Date, endDate: Date) {
 
-    this.http.get("https://localhost:44369/studentservice/getuserid/"+localStorage.getItem('usermail')).subscribe(
+    this.http.get("http://localhost:9091/studentservice/getuserid/"+localStorage.getItem('usermail')).subscribe(
       (result) => {
         this.UserId = result['id'];
         this.TechnologyId = id;
@@ -95,7 +95,7 @@ export class CourselistComponent implements OnInit {
   
     let headers = new HttpHeaders({'Content-Type': 'application/json'});
   
-    this.http.post("https://localhost:44369/studentservice/addtraining", body, 
+    this.http.post("http://localhost:9091/studentservice/addtraining", body, 
                   {headers: headers, responseType:'text'}).subscribe(
       (result) => {
         console.log(result)
@@ -110,7 +110,7 @@ export class CourselistComponent implements OnInit {
   }
   
   getmentorprofile= function(id: string) {
-    this.http.get("https://localhost:44369/studentservice/getmentorprofile/"+id).subscribe(
+    this.http.get("http://localhost:9091/studentservice/getmentorprofile/"+id).subscribe(
       (result) => {
         this.mentor = result;
         console.log(result)

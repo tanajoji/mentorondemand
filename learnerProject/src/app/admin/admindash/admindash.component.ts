@@ -20,7 +20,7 @@ export class AdmindashComponent implements OnInit {
   uerror_message='';
   users = [];
   get_user_list = function() {
-    this.http.get("https://localhost:44369/adminservice/studentlist").subscribe(
+    this.http.get("http://localhost:9091/adminservice/studentlist").subscribe(
       (result : any[]) => {
         this.users = result;
         this.uerror_message = ""
@@ -34,7 +34,7 @@ export class AdmindashComponent implements OnInit {
 
   delete_user = function(id) {
     
-    this.http.delete("https://localhost:44369/adminservice/"+id).subscribe(
+    this.http.delete("http://localhost:9091/adminservice/"+id).subscribe(
       (result) => {
         this.uerror_message = "Deleted"
         this.users = [];
@@ -49,7 +49,7 @@ export class AdmindashComponent implements OnInit {
 
   block_user = function(id) {
     console.log(id)
-    this.http.put("https://localhost:44369/adminservice/block/"+id).subscribe(
+    this.http.put("http://localhost:9091/adminservice/block/"+id).subscribe(
       (result : any[]) => {
         this.users = result;
         console.log(this.users)
@@ -67,7 +67,7 @@ export class AdmindashComponent implements OnInit {
 
   unblock_user = function(id) {
     console.log(id)
-    this.http.put("https://localhost:44369/adminservice/unblock/"+id).subscribe(
+    this.http.put("http://localhost:9091/adminservice/unblock/"+id).subscribe(
       (result : any[]) => {
         this.users = result;
         console.log(this.users)
@@ -94,7 +94,7 @@ export class AdmindashComponent implements OnInit {
   merror_message='';
   mentors = [];
   get_mentor_list = function() {
-    this.http.get("https://localhost:44369/adminservice/mentorlist").subscribe(
+    this.http.get("http://localhost:9091/adminservice/mentorlist").subscribe(
       (result : any[]) => {
         this.mentors = result;
         console.log(result)
@@ -108,7 +108,7 @@ export class AdmindashComponent implements OnInit {
   }
 
   delete_mentor = function(id) {
-    this.http.delete("https://localhost:44369/adminservice/"+id).subscribe(
+    this.http.delete("http://localhost:9091/adminservice/"+id).subscribe(
       (result) => {
         
         this.merror_message = "Deleted"
@@ -124,7 +124,7 @@ export class AdmindashComponent implements OnInit {
 
   block_mentor = function(id) {
     console.log(id)
-    this.http.put("https://localhost:44369/adminservice/block/"+id).subscribe(
+    this.http.put("http://localhost:9091/adminservice/block/"+id).subscribe(
       (result : any[]) => {
         this.mentots = result;
         console.log(this.mentors)
@@ -142,7 +142,7 @@ export class AdmindashComponent implements OnInit {
 
   unblock_mentor = function(id) {
     console.log(id)
-    this.http.put("https://localhost:44369/adminservice/unblock/"+id).subscribe(
+    this.http.put("http://localhost:9091/adminservice/unblock/"+id).subscribe(
       (result : any[]) => {
         this.mentors = result;
         console.log(this.mentors)
@@ -170,7 +170,7 @@ export class AdmindashComponent implements OnInit {
   terror_message='';
   techs = [];
   get_technology_list = function() {
-    this.http.get("https://localhost:44369/adminservice/technologylist").subscribe(
+    this.http.get("http://localhost:9091/adminservice/technologylist").subscribe(
       (result : any[]) => {
         this.techs = result;
         console.log(result)
@@ -184,7 +184,7 @@ export class AdmindashComponent implements OnInit {
   }
 
   delete_technology = function(id) {
-    this.http.delete("https://localhost:44369/adminservice/technology/"+id).subscribe(
+    this.http.delete("http://localhost:9091/adminservice/technology/"+id).subscribe(
       (result) => {
         
         this.terror_message = "Deleted"

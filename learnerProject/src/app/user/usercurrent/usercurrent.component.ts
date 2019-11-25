@@ -26,7 +26,7 @@ export class UsercurrentComponent implements OnInit {
 
 
 
-    this.http.get("https://localhost:44369/studentservice/getuserid/"+localStorage.getItem('usermail')).subscribe(
+    this.http.get("http://localhost:9091/studentservice/getuserid/"+localStorage.getItem('usermail')).subscribe(
       (result) => {
        
         console.log(result);
@@ -43,7 +43,7 @@ export class UsercurrentComponent implements OnInit {
 }
 
   get_list = function() {
-    this.http.get("https://localhost:44369/studentservice/traininglist/"+this.userId).subscribe(
+    this.http.get("http://localhost:9091/studentservice/traininglist/"+this.userId).subscribe(
       (result : any[]) => {
         this.courses = result;
         console.log(result)

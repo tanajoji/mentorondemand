@@ -25,7 +25,7 @@ export class EdittechnologyComponent implements OnInit {
       console.log(this.Id);
     });
 
-    this.http.get("https://localhost:44369/adminservice/technology/"+this.Id).subscribe(
+    this.http.get("http://localhost:9091/adminservice/technology/"+this.Id).subscribe(
       (result) => {
        
         console.log(result);
@@ -53,7 +53,7 @@ export class EdittechnologyComponent implements OnInit {
     
     let headers = new HttpHeaders({'Content-Type': 'application/json'});
 
-    this.http.put("https://localhost:44369/adminservice/technology/"+this.Id,form, 
+    this.http.put("http://localhost:9091/adminservice/technology/"+this.Id,form, 
                   {headers: headers, responseType:'text'}).subscribe(
       (result) => {
         console.log(result)
