@@ -73,6 +73,7 @@ namespace MentorLibrary.Repositories
         public IEnumerable<Course> GetCourses()
         {
             var course = from a in context.Courses
+                         where a.EndDate >= DateTime.Today
                          select a;
             return course;
         }
