@@ -110,6 +110,13 @@
 <h1>Courses Available</h1>
 
     <br>
+
+    <div id="usr" style="text-align: center; padding-top: 5%;">
+      <input id="myInput" name="search" style="width:50%" placeholder="                                                                    Search here.">
+  <br><br>
+
+
+
     <br><br>
 
     <div class="card1 tablepadding">
@@ -125,6 +132,7 @@
           <th>Trainer Details</th>
           
         </tr>
+        <tbody id="myTable">
         <tr *ngFor="let course of courses" class="text">
           
           <td>{{course.technologyName}}</td>
@@ -139,6 +147,7 @@
 
           
         </tr>
+      </tbody>
       </table>
     </div>
 
